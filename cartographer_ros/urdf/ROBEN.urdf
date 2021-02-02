@@ -1,0 +1,17 @@
+<robot name="ROBEN">
+  <link name="base_link" />
+  <link name="imu_link" />
+  <link name="sensor" />
+
+  <joint name="imu_link_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="imu_link" />
+    <origin xyz="0 0 0" rpy="0. 0. 0." />
+  </joint>
+
+  <joint name="sensor_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="sensor" />
+    <origin xyz="0.12 0. 0.25" rpy="0. 0. 0." />
+  </joint>
+</robot>
